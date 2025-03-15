@@ -1,0 +1,16 @@
+# node_modules
+node_modules/
+
+# Dependências de build
+.next/
+out/
+
+# Arquivos de log
+*.log
+
+# Arquivos do banco de dados
+*.sqlite
+*.db
+
+# Arquivo de configuração local
+.env
