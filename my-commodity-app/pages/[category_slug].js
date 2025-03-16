@@ -3,6 +3,8 @@ import axios from "axios";
 import Link from "next/link";
 import '../app/globals.css';
 import { useState, useEffect } from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 
 export default function CategoryPage({ category, subcategories }) {
@@ -15,12 +17,14 @@ export default function CategoryPage({ category, subcategories }) {
   }, [category, subcategories]);
 
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-gray-100 text-gray-800">
+    <div className="bg-gray-100 min-h-screen pt-20"> {/* Apply padding top to avoid overlap with fixed header */}
+      <Header />
+
       {/* Hero Section */}
-      <header className="bg-gradient-to-r from-teal-500 via-blue-600 to-purple-700 text-white py-16 px-8">
+      <header className="bg-gray-200 text-gray-800 py-12 px-8 mt-24">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl font-extrabold tracking-tight">{category?.title || "Loading..."}</h1>
-          <p className="mt-4 text-lg font-medium text-gray-200">{category?.description}</p>
+          <h1 className="text-4xl font-semibold">{category?.title || "Loading..."}</h1>
+          {category?.description && <p className="mt-2 text-lg text-gray-600">{category?.description}</p>}
         </div>
       </header>
 
@@ -47,13 +51,7 @@ export default function CategoryPage({ category, subcategories }) {
         )}
       </section>
 
-      {/* Footer Section */}
-      <footer className="bg-gray-900 text-gray-400 py-12">
-        <div className="max-w-7xl mx-auto px-8 text-center">
-          <p className="text-sm">© 2025 Commodity Insights. All Rights Reserved.</p>
-          <p className="mt-2 text-xs">Disclaimer: Information provided is for informational purposes only and is not investment advice.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
