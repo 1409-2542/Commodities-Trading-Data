@@ -17,7 +17,6 @@ export default function CommodityTable({ data }) {
       </thead>
       <tbody>
         {data.map((item, index) => {
-          const link = `/${item.category}/${item.subcategory}/${item.name.toLowerCase().replace(/\s+/g, '-')}`
           return (
             <tr key={index} className="hover:bg-gray-100">
               <td className="px-6 py-4">{item.name}</td>
