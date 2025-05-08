@@ -20,7 +20,7 @@ export default function HomePage() {
         <CommodityTable data={commodities} />
       </div>
       <div>
-      <Link href="/yearly-data" className="text-3xl font-bold text-gray-800 hover:text-blue-800">View Yearly Commodities &#62;</Link>
+      <Link href="/yearly-data" className="text-3xl font-bold text-gray-800 hover:text-blue-800">View Yearly Commodity Prices &#62;</Link>
       </div>      
     </div>
   );
