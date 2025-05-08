@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import liveprices from '../data/liveprices'
 import commodities from '../data/commodities'
 import marketTrends from '../data/markettrends'
@@ -18,6 +19,9 @@ export default function HomePage() {
       <div>
         <CommodityTable data={commodities} />
       </div>
+      <div>
+      <Link href="/yearly-data" className="text-3xl font-bold text-gray-800 hover:text-blue-800">View Yearly Commodities &#62;</Link>
+      </div>      
     </div>
   );
 }
