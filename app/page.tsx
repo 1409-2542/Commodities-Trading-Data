@@ -2,10 +2,12 @@ import Link from 'next/link'
 import liveprices from '../data/liveprices'
 import commodities from '../data/commodities'
 import marketTrends from '../data/markettrends'
+import calendar from '../data/calendar'
 
 import LiveMarketPrices from '../components/LiveMarketPrices'
 import CommodityTable from '../components/CommodityTable'
 import MarketTrends from '../components/MarketTrends'
+import CalendarPage from '../components/CalendarPage'
 
 export default function HomePage() {
   return (
@@ -14,10 +16,14 @@ export default function HomePage() {
         <LiveMarketPrices data={liveprices} />
       </div>
       <div>
+        <CalendarPage data={calendar.slice(0, 3)} />
+        <Link href="/calendar" className="text-blue-600 hover:underline">View All →</Link>
+      </div>
+      <div>
         <MarketTrends data={marketTrends} />
       </div>
       <div>
-        <CommodityTable data={commodities} />
+        <CommodityTable data={commodities}/>
       </div>
       <div>
       <Link href="/yearly-data" className="text-3xl font-bold text-gray-800 hover:text-blue-800">View Yearly Commodity Prices &#62;</Link>

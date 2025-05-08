@@ -2,7 +2,7 @@
 
 export default function YearlyCommodityTable({ data }) {
   return (
-    <section>
+    <section className="space-y-6 mt-12">
       <h2 className="text-3xl font-bold text-gray-800">Commodity Prices Table</h2>
         <table className="table-auto w-full bg-white rounded-lg shadow-xl mt-6">
           <thead className="bg-gradient-to-r from-blue-700 to-teal-500 text-white">
