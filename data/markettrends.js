@@ -14,7 +14,7 @@ const marketTrends = [
   {
     title: 'U.S. Natural Gas Futures Rise on Strong Exports',
     description:
-      'U.S. natural gas futures are getting a boost from strong exports, with the U.S. holding its spot as the world’s top LNG exporter. However, low seasonal demand has led to a likely above-average increase in gas storage last week.The U.S. Energy Information Administration will release the official numbers Thursday at 10:30 a.m. EDT.',
+      'U.S. natural gas futures are getting a boost from strong exports, with the U.S. holding its spot as the world’s top LNG exporter. However, the U.S. Energy Information Administration said gas storage increased by 104 Bcf, well above the the 5-year average of 79 Bcf amid low seasonal demand.',
     color: 'yellow-500'
   }
 ];
