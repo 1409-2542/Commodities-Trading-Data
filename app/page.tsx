@@ -23,10 +23,11 @@ export default function HomePage() {
         <MarketTrends data={marketTrends} />
       </div>
       <div>
-        <CommodityTable data={commodities}/>
+        <CommodityTable data={commodities.slice(0, 9)} />
+        <Link href="/prices" className="text-blue-600 hover:underline">View All →</Link>
       </div>
       <div>
-      <Link href="/yearly-data" className="text-3xl font-bold text-gray-800 hover:text-blue-800">View Yearly Commodity Prices &#62;</Link>
+      <Link href="/yearly-prices" className="text-3xl font-bold text-gray-800 hover:text-blue-800">View Yearly Commodity Prices &#62;</Link>
       </div>      
     </div>
   );

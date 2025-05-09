@@ -3,8 +3,8 @@
 export default function Calendar({ data }) {
   return (
     <section className="space-y-6 mt-12">
-      <div className="overflow-x-auto mt-6">
       <h2 className="text-3xl font-bold text-gray-800">Commodity Events Calendar</h2>
+      <div className="overflow-x-auto mt-6">
         <table className="table-auto w-full bg-white rounded-lg shadow-md mt-6">
           <thead className="bg-gradient-to-r from-blue-700 to-teal-500 text-white">
             <tr>
